@@ -16,9 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
+    
+    if (AUTH_TOKEN != nil) {
+        UIViewController *Tabbar = [self.storyboard instantiateViewControllerWithIdentifier:@"TabbarVC"];
+        self.view.window.rootViewController = Tabbar;
+    }
+    else{
+        UIViewController *loginView = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginVC"];
+        [self.navigationController pushViewController:loginView animated:true];
+    }
+}
+
+#pragma mark -
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

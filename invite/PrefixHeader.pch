@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  invite
+//
+//  Created by Ajay CQL on 04/09/17.
+//  Copyright © 2017 cqlsys. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#import "Macro.h"
+#import "textfield.h"
+#import "MRProgress.h"
+#import "Util.h"
+#import "ApiManager.h"
+#import "UIImageView+AFNetworking.h"
+#import "AppDelegate.h"
+#import <IQKeyboardManager.h>
+#import "CustomVW.h"
+#import <TSMessage.h>
+#import "LocationManager.h"
